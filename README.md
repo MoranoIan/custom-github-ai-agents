@@ -1,10 +1,68 @@
 # Custom GitHub AI Agents
-This compiles the github/copilot ai agents I use and tuned. Some agents and skills are referenced from other repositories, but personally fine-tuned by me for better output alignment.
 
-Copy this structure under the `.github/` directory from your root folder, and select the agent for your specific task for the session in the GitHub Copilot Chat (`Ctrl + Alt + I`).
+This repository is a public collection of reusable GitHub Copilot assets for agentic coding workflows. It contains agent definitions, reusable skills, and custom instructions that can be copied into a repository's `.github/` directory and used through GitHub Copilot Chat.
 
-I recommend to use **lower-tier models** for everyday tasks and coding. Only use the **higher-tier models** for critical audits and fixes (*Claude Opus 5 is set to default*).
+The goal is to provide a lightweight, practical structure for teams or individuals who want to make their coding assistants more consistent, more specialized, and more aligned with their preferred working style.
 
-**`NOTE: ALWAYS validate the AI's output. Review each action before granting permissions.`** 
+## What this repository contains
 
+This repository includes three main categories of reusable assets:
 
+- `agents/` — specialized agents for different workflows and review styles.
+- `skills/` — reusable capabilities or domain-specific playbooks.
+- `instructions/` — custom instruction files that shape assistant behavior.
+
+It also includes a custom NotebookLM research instruction in the instructions folder, which is designed for academic or research-oriented synthesis workflows.
+
+Some files in this repository are adapted from or inspired by assets elsewhere, and these have been tuned for better alignment with the author's workflow and preferences.
+
+## Intended Repository structure
+
+```text
+.github/
+  instructions/
+  skills/
+  agents/
+```
+
+The repository is intentionally simple and modular:
+
+- `agents/` stores agent definitions for different kinds of tasks.
+- `skills/` stores reusable skills that can be attached to broader assistant workflows.
+- `instructions/` stores custom instruction files, such as the included NotebookLM research system instruction.
+
+## How to reuse this repository
+
+Copy the `.github/` directory structure into the root of another repository, or copy the relevant folders into your own repository's `.github/` setup.
+
+Once the directory is in place:
+
+1. Open GitHub Copilot Chat in the editor.
+2. Choose the relevant agent or instruction for your task.
+3. Ask the assistant to perform the work you need.
+
+For example, in VS Code, open Copilot Chat and select an appropriate agent from the available session options.
+
+## Recommended model usage
+
+For day-to-day coding and normal repository tasks, use lower-tier models when practical. For more important reviews, audits, security-oriented work, or high-impact reasoning, use a higher-tier model.
+
+The important principle is simple:
+
+> Always validate the AI's output before accepting it. Review each action before granting permissions or applying a change.
+
+## Contributor guidance
+
+If you want to extend this repository:
+
+- Add a new agent in `agents/` when you need a specialized assistant persona.
+- Add a new skill in `skills/` when you want reusable workflow logic or domain guidance.
+- Add a new instruction in `instructions/` when you want to define behavior for research, review, documentation, or quality control.
+
+Keep files consistent, descriptive, and easy to understand. A good public repository asset should be clear enough for others to copy and adapt without a great deal of hidden context.
+
+## Notes
+
+This repository is meant to be a practical starting point. It is not a complete framework by itself, but it is designed to be copied, customized, and expanded for your own workflows.
+
+Use the assets carefully, and always verify output before trusting or applying it.
