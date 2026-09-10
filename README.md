@@ -43,11 +43,13 @@ Once the directory is in place:
 
 For example, in VS Code, open Copilot Chat and select an appropriate agent from the available session options.
 
-## Recommended model usage
+## ⚠️ Recommended model usage
 
-For day-to-day coding and normal repository tasks, use lower-tier models when practical. For more important reviews, audits, security-oriented work, or high-impact reasoning, use a higher-tier model.
+For day-to-day coding and normal repository tasks, use lower-tier models when practical. For more important reviews, audits, security-oriented work, or high-impact reasoning, use a higher-tier model. (*high-tier models are set to default — requires modification*)
 
-The important principle is simple:
+**Also keep in mind**: agentic coding workflows (agents that plan, search, edit, and execute across multiple steps) consume significantly more credits and context window than a standard single prompt-and-response pattern. Scope agent tasks deliberately, and don't reach for an agent when a normal prompt would do.
+
+**The important principle is simple:**
 
 > Always validate the AI's output before accepting it. Review each action before granting permissions or applying a change.
 
@@ -55,9 +57,9 @@ The important principle is simple:
 
 If you want to extend this repository:
 
-- Add a new agent in `agents/` when you need a specialized assistant persona.
-- Add a new skill in `skills/` when you want reusable workflow logic or domain guidance.
-- Add a new instruction in `instructions/` when you want to define behavior for research, review, documentation, or quality control.
+- Add a new agent in `agents/` when you need a specialized assistant persona. Use the naming convention `<agent-name>.agent.md`
+- Add a new skill in `skills/` when you want reusable workflow logic or domain guidance. Use the naming convention `<skill-name>/SKILL.md`
+- Add a new instruction in `instructions/` when you want to define behavior for research, review, documentation, or quality control. Use the naming convention `<instruction-name>.instruction.md`
 
 Keep files consistent, descriptive, and easy to understand. A good public repository asset should be clear enough for others to copy and adapt without a great deal of hidden context.
 
