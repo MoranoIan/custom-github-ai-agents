@@ -1,6 +1,6 @@
 # Custom GitHub AI Agents
 
-This repository is a public collection of reusable GitHub Copilot assets for agentic coding workflows. It contains agent definitions, reusable skills, and custom instructions that can be copied into a repository's `.github/` directory and used through GitHub Copilot Chat.
+This repository is a public collection of reusable GitHub Copilot assets for repository-Level AI & Custom Agents. It contains agent definitions, reusable skills, and custom instructions that can be copied into a repository's `.github/` directory and used through GitHub Copilot Chat.
 
 The goal is to provide a lightweight, practical structure for teams or individuals who want to make their coding assistants more consistent, more specialized, and more aligned with their preferred working style.
 
@@ -12,7 +12,7 @@ This repository includes three main categories of reusable assets:
 - `skills/` — reusable capabilities or domain-specific playbooks.
 - `instructions/` — custom instruction files that shape assistant behavior.
 
-It also includes a custom NotebookLM research instruction in the instructions folder, which is designed for academic or research-oriented synthesis workflows.
+It also includes a custom NotebookLM research agent in the `agents/` folder, which is designed for academic or research-oriented synthesis workflows.
 
 Some files in this repository are adapted from or inspired by assets elsewhere, and these have been tuned for better alignment with the author's workflow and preferences.
 
@@ -61,7 +61,7 @@ If you want to extend this repository:
 - Add a new skill in `skills/` when you want reusable workflow logic or domain guidance. Use the naming convention `<skill-name>/SKILL.md`
 - Add a new instruction in `instructions/` when you want to define behavior for research, review, documentation, or quality control. Use the naming convention `<instruction-name>.instruction.md`
 
-Keep files consistent, descriptive, and easy to understand. A good public repository asset should be clear enough for others to copy and adapt without a great deal of hidden context.
+Keep files consistent, descriptive, and easy to understand.
 
 ## Notes
 
