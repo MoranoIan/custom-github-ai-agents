@@ -29,7 +29,7 @@ The repository is intentionally simple and modular:
 
 - `agents/` stores agent definitions for different kinds of tasks.
 - `skills/` stores reusable skills that can be attached to broader assistant workflows.
-- `instructions/` stores custom instruction files, such as the included NotebookLM research system instruction.
+- `instructions/` stores custom instruction files/system instructions.
 
 ## How to reuse this repository
 
@@ -59,7 +59,7 @@ If you want to extend this repository:
 
 - Add a new agent in `agents/` when you need a specialized assistant persona. Use the naming convention `<agent-name>.agent.md`
 - Add a new skill in `skills/` when you want reusable workflow logic or domain guidance. Use the naming convention `<skill-name>/SKILL.md`
-- Add a new instruction in `instructions/` when you want to define behavior for research, review, documentation, or quality control. Use the naming convention `<instruction-name>.instruction.md`
+- Add a new instruction in `instructions/` when you want to define behavior for research, review, documentation, or quality control. Use the naming convention `<instruction-name>.instructions.md`
 
 Keep files consistent, descriptive, and easy to understand.
 
